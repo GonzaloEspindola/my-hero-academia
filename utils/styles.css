@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.add-height {
+  height: auto !important;
+}
+
+.rotate90 {
+  transform: rotate(0deg) !important;
+}
+
+.jv-wrap {
+  display: flex;
+}
+
+.jv-folder {
+  cursor: pointer;
+}
+
+/* for light them */
+
+.jv-light-symbol {
+  color: #000;
+  font-weight: bold;
+}
+
+.jv-light-con {
+  background: #fff;
+  color: #000;
+  font-family: 'Space Mono';
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.jv-light-current {
+  line-height: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.jv-light-left {
+  display: inline-block;
+}
+
+.jv-light-rightString {
+  display: inline-block;
+  color: #7a3e9d;
+}
+
+.jv-light-rightBoolean {
+  display: inline-block;
+  color: #448c27;
+}
+
+.jv-light-rightNumber {
+  display: inline-block;
+  color: #f53232;
+}
+
+.jv-light-rightNull {
+  display: inline-block;
+  color: #9c5d27;
+}
+
+.jv-light-rightObj {
+  display: block !important;
+  overflow: hidden;
+  height: 0;
+}
+
+.jv-light-rightArr {
+  display: block !important;
+  overflow: hidden;
+  height: 0;
+}
+
+.jv-light-folder {
+  width: 0px;
+  display: inline-block;
+  margin-left: -15px;
+  text-align: center;
+  cursor: pointer;
+  height: 0px;
+  border: 4px solid transparent;
+  border-top: 8px solid #484d50;
+  position: absolute;
+  top: 11px;
+  transform-origin: 50% 25%;
+  transform: rotate(-90deg);
+}
+
+/* for dark theme */
+
+.jv-dark-con {
+  color: #000;
+  font-family: 'Space Mono';
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.jv-dark-symbol {
+  color: #da70d6;
+  font-weight: bold;
+}
+
+.jv-dark-current {
+  line-height: 30px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 16px;
+}
+
+.jv-dark-left {
+  display: inline-block;
+}
+
+.jv-dark-left-text {
+  color: #9cdcfe;
+}
+
+.jv-dark-left-array-item {
+  color: #b5cea8;
+}
+
+.jv-dark-rightString {
+  display: inline-block;
+  color: #ce9178;
+}
+
+.jv-dark-rightBoolean {
+  display: inline-block;
+  color: #569cd6;
+}
+
+.jv-dark-rightNumber {
+  display: inline-block;
+  color: #b5cea8;
+}
+
+.jv-dark-rightNull {
+  display: inline-block;
+  color: #569cd6;
+}
+
+.jv-dark-rightObj {
+  display: block !important;
+  overflow: hidden;
+  height: 0;
+}
+
+.jv-dark-rightArr {
+  display: block !important;
+  overflow: hidden;
+  height: 0;
+}
+
+.jv-dark-folder {
+  width: 0px;
+  display: inline-block;
+  margin-left: -15px;
+  text-align: center;
+  cursor: pointer;
+  height: 0px;
+  border: 4px solid transparent;
+  border-top: 8px solid #da70d6;
+  position: absolute;
+  top: 11px;
+  transform: rotate(-90deg);
+  transform-origin: 50% 25%;
+}
+
+.jv-dark-len {
+  color: white;
+}
+
+.obj-color {
+  color: #9cdcfe;
+}
+
+.arr-color {
+  color: #b5cea8;
+}

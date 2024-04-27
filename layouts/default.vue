@@ -1,5 +1,9 @@
 <template>
-    <h1>header</h1>
+  <section
+    class="flex flex-col items-center justify-center min-h-screen mx-auto z-10"
+  >
+    <Header />
     <slot />
-    <h1>footer</h1>
+    <Footer />
+  </section>
 </template>
