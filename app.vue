@@ -1,22 +1,6 @@
-<script setup lang="ts">
-const theme = ref<string>('light')
-
-if (
-  window.matchMedia &&
-  window.matchMedia('(prefers-color-scheme: dark)').matches
-) {
-  theme.value = 'dark'
-} else {
-  theme.value = 'light'
-}
-</script>
-
 <template>
-  <NuxtLayout>
-    <div
-      class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"
-    ></div>
-    <NuxtPage :class="{ theme }" />
+  <NuxtLayout class="bg-[#0f1729]">
+    <NuxtPage />
   </NuxtLayout>
 </template>
 

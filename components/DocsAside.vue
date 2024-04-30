@@ -9,21 +9,28 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <aside class="bg-white shadow-sm border-r-2 pt-12 px-6">
+  <aside class="bg-[#0f1729] border-r-[1px] border-gray-700 pt-12 px-6">
     <nav class="flex h-full fixed">
       <ul class="flex flex-col gap-y-8">
-        <div v-for="doc in props.docsData" :key="doc.title">
-          <li class="text-[#1b1b1b] font-bold w-[250px]">
-            <a :href="`#${doc.title}`" class="text-xl">{{ doc.title }}</a>
-          </li>
-          <li
+        <li
+          v-for="doc in props.docsData"
+          :key="doc.title"
+          class="flex flex-col"
+        >
+          <a
+            :href="`#${doc.title}`"
+            class="text-xl text-white font-bold w-[250px] hover:bg-red-500"
+            >{{ doc.title }}</a
+          >
+          <a
             v-for="sub in doc.subtitle"
             :key="sub.title"
-            class="text-[#616161] w-[250px]"
+            :href="`#${sub.title}`"
+            class="text-white opacity-60 w-[250px]"
           >
-            <a :href="`#${sub.title}`" class="pl-2">- {{ sub.title }}</a>
-          </li>
-        </div>
+            {{ sub.title }}
+          </a>
+        </li>
       </ul>
     </nav>
   </aside>

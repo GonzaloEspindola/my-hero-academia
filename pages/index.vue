@@ -20,7 +20,7 @@ definePageMeta({
       </section>
 
       <section>
-        <p class="text-dark text-pretty dark:text-white">
+        <p class="text-white text-pretty">
           ¡Bienvenido a la API de My Hero Academia! Sumérgete en el vibrante
           universo de héroes y villanos con nuestra completa base de datos.
           <br />
