@@ -40,6 +40,6 @@ const navItems = [
 
 <style scoped>
 .active {
-  background-color: red;
+  background-color: #e70007;
 }
 </style>

@@ -18,10 +18,10 @@ const props = defineProps<Props>()
       :id="doc.title"
       class="flex flex-col gap-2 min-w-full"
     >
-      <h2 class="bg-[#e70007] text-white text-3xl px-6 w-fit">
+      <h2 class="text-white text-3xl w-fit">
         {{ doc.title }}
       </h2>
-      <p class="text-[#616161] mb-4">{{ doc.description }}</p>
+      <p class="text-white mb-4 opacity-60">{{ doc.description }}</p>
 
       <article
         v-for="sub in doc.subtitle"
@@ -29,10 +29,8 @@ const props = defineProps<Props>()
         :id="sub.title"
         class="flex flex-col gap-2"
       >
-        <h2 class="bg-[#e70007] text-white text-lg px-6 w-fit">
-          - {{ sub.title }}
-        </h2>
-        <p class="text-[#616161]">{{ sub.description }}</p>
+        <h2 class="text-white text-lg w-fit">- {{ sub.title }}</h2>
+        <p class="text-white mb-4 opacity-60">{{ sub.description }}</p>
         <ResponseJson
           v-if="sub.response"
           :baseUrl="baseUrl"

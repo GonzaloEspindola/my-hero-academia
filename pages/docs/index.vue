@@ -1,4 +1,9 @@
 <script setup>
+definePageMeta({
+  layout: 'default',
+  auth: false,
+})
+
 import { docsData, baseUrl } from '../../utils/data'
 </script>
 
